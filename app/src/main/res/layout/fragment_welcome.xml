@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Using ConstraintLayout to arrange these views easily -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.welcome.WelcomeFragment"
+        android:background="@color/codGray">
+
+        <!-- TextViews used to give a welcome message -->
+        <TextView
+            style="@style/instructions"
+            android:gravity="center"
+            android:id="@+id/welcomeMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <TextView
+            style="@style/instructions"
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_start_end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/layout_margin_start_end"
+            android:padding="@dimen/layout_margin_start_end"
+            android:text="@string/info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <!-- Clicking these buttons to navigate to instructions screen  -->
+        <Button
+            android:id="@+id/instructions_button"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:text="@string/click_here_to_go_to_instructions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

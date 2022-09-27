@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ConstraintLayout was used here due to flexibility in views positioning -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/codGray">
+        <!-- Two text views that represents the instructions of the app -->
+        <TextView
+            android:id="@+id/instructions"
+            style="@style/instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/instructions2"
+            style="@style/instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.6"
+            android:text="@string/instructions2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Clicking this button to navigate to the shoes list -->
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/clickToShoesStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin_from_parent"
+            android:text="@string/click_here_to_get_the_list_of_available_shoes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="632dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e_mail">E-mail</string>
+    <string name="e_mail_hint">ex: example@address.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Password must contains letters, numbers and symbols</string>
+    <string name="new_login">New Login</string>
+    <string name="login_with_existing_account">Login with existing account</string>
+    <string name="welcome_message">Welcome to Shoe Store app</string>
+    <string name="info">This app allows to choose any shoes brand with prices that are affordable.Join our family and see what is new.</string>
+    <string name="click_here_to_go_to_instructions">Click here to go to instructions</string>
+    <string name="instructions">a) When you click the following button. You will be moved to screen containing a list of shoes offered in our branches.</string>
+    <string name="instructions2">b) When clicking add new shoes button, you navigate to a details screen which you are allowed to add new data about new shoes</string>
+    <string name="click_here_to_get_the_list_of_available_shoes">Click here to get the list of available shoes.</string>
+    <string name="fab_description">floatingButton</string>
+    <string name="log_out">Log out</string>
+    <string name="shoe_name">SHOE NAME</string>
+    <string name="shoe_name_entry_hint">ex: Sneakers, Boots …etc</string>
+    <string name="company">COMPANY</string>
+    <string name="company_hint">ex: ADIDAS, NIKE…etc</string>
+    <string name="shoe_size">SHOE SIZE</string>
+    <string name="shoe_size_hint">ex: 39,42,…etc</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="description_hint">Enter a description here …</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="shoe_store_app">SHOE STORE APP</string>
+    <string name="app_name">ShoeStore</string>
+
+</resources>

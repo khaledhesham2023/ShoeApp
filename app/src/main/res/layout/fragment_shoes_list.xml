@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Using ConstraintLayout for complex views arrangement -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/codGray">
+        <!-- Using this view to scroll down the screen -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Using LinearLayout as a container of views added once a new shoes is added -->
+            <LinearLayout
+                android:id="@+id/shoeListItemsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Using this button to navigate to shoe details screen to create a new shoe  -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shoeListActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin_from_parent"
+            android:layout_marginBottom="@dimen/button_margin_from_parent"
+            android:contentDescription="@string/fab_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_add"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

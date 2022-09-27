@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- A FrameLayout that contains the login fragment -->
+    <FrameLayout
+        android:id="@+id/loginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.login.LoginFragment">
+
+        <!-- We used ConstraintLayout to make the views arrangement flexible -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/codGray">
+            <!-- A layout that contains logo and app name -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/layout_margin_start_end"
+                app:layout_constraintBottom_toTopOf="@id/email_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/shoelogo"
+                    app:layout_constraintBottom_toTopOf="@+id/title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shoe_store_app"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- E-mail label -->
+            <TextView
+                android:id="@+id/email_label"
+                style="@style/labelsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/e_mail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- Password label -->
+            <TextView
+                android:id="@+id/password_label"
+                style="@style/labelsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_entry" />
+
+            <!-- E-mail entry -->
+            <EditText
+                android:id="@+id/email_entry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start_end"
+                android:layout_marginEnd="@dimen/layout_margin_start_end"
+                android:backgroundTint="@color/greenYellowHint"
+                android:hint="@string/e_mail_hint"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/greenYellow"
+                android:textColorHint="@color/greenYellowHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_label" />
+
+            <!-- Password entry -->
+            <EditText
+                android:id="@+id/password_entry"
+                style="@style/inputTextLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_label" />
+
+            <!-- This button for a sign up  -->
+            <Button
+                android:id="@+id/new_login_button"
+                style="@style/buttonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:text="@string/new_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_entry" />
+
+            <!-- This button for signing in with existing account -->
+            <Button
+                android:id="@+id/existing_login_button"
+                style="@style/buttonStyle"
+                android:layout_marginStart="@dimen/layout_margin_start_end"
+                android:layout_marginEnd="@dimen/layout_margin_start_end"
+                android:text="@string/login_with_existing_account"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/new_login_button"
+                app:layout_constraintVertical_bias="0.1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

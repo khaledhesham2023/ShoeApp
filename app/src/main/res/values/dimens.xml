@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin_start_end">16dp</dimen>
+    <dimen name="layout_margin_top">8dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="button_margin_from_parent">30dp</dimen>
+    <dimen name="buttonLoginHeight">68dp</dimen>
+    <dimen name="zeroConstraint">0dp</dimen>
+    <dimen name="statementMargin">20dp</dimen>
+    <dimen name="statementWidth">100dp</dimen>
+</resources>
